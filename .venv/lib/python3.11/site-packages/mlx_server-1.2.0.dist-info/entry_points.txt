@@ -1,0 +1,2 @@
+[console_scripts]
+mlxserver = mlxserver.cli:app

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlx-server"
+version = "1.2.0" # 機能追加のためバージョンアップ
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic-settings",
+    "mlx-lm",
+    "typer",
+    "rich",
+    "requests",
+    "click",
+    "huggingface_hub",
+    "gguf",
+    "sentencepiece",
+    "numpy",
+    "scikit-learn",
+    "psutil", # <<<--- この行を追加
+]
+
+[tool.setuptools]
+packages = ["mlxserver"]
+
+[project.scripts]
+mlxserver = "mlxserver.cli:app"

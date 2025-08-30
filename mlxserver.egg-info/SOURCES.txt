@@ -1,0 +1,8 @@
+pyproject.toml
+mlxserver/__init__.py
+mlxserver/cli.py
+mlxserver/main.py
+mlxserver.egg-info/PKG-INFO
+mlxserver.egg-info/SOURCES.txt
+mlxserver.egg-info/dependency_links.txt
+mlxserver.egg-info/top_level.txt
